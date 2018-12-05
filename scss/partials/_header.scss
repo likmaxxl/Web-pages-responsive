@@ -1,0 +1,253 @@
+header {
+  color: white;
+  background-image: url("../img/cover.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+  animation-name: myan1;
+  animation-duration: 10s;
+
+  .bckgr-op {
+    margin-right: calc(100% - 100px);
+    background-color: rgba(0,0,0,.4);
+    width: 100%;
+    height: 100vh;
+  }
+
+  .black {
+    @media all and(min-width:992px) {
+      & {
+        background: rgba(0,0,0,.5);
+        transition: all 1s;
+      }
+    }
+  }
+
+  .navbar-light {
+    .navbar-collapse {
+      margin-top: -10px;
+    }
+
+    button:focus {
+      border: none;
+      outline: none;
+    }
+
+    .navbar-brand {
+      display: none;
+      color: #FED136;
+      font-size: 37px;
+      letter-spacing: 2px;
+      font-family: 'Unlock', cursive;
+
+      &:hover {
+        background-color: #ebba10;
+        @media all and(min-width:992px) {
+          background-color: transparent;
+          color: #edc434;
+        }
+      }
+      @media all and(min-width:992px) {
+        & {
+          display: block;
+        }
+      }
+    }
+  }
+
+  .navbar-nav {
+    .nav-item {
+      .nav-link {
+        text-transform: uppercase;
+        color: white;
+        font-size: 18.5px;
+        padding-left: 20px;
+
+        &:hover {
+          color: #FED136;
+        }
+      }
+    }
+    background-color: rgba(0,0,0,.8);
+    @media all and(min-width:992px) {
+      & {
+        padding-left: 0;
+        background-color: rgba(0,0,0,0);
+      }
+    }
+  }
+
+  .navbar-toggler {
+    &:hover {
+      background-color: rgba(0,0,0,.8);
+    }
+  }
+
+  .b {
+    background: #FED136;
+    transition: all 1s;
+  }
+
+  .head,
+  .head1,
+  .head2,
+  .head3 {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    p:nth-of-type(1) {
+      font-style: oblique;
+      font-size: 30px;
+    }
+
+    p:nth-of-type(2) {
+      font-size: 47px;
+      text-transform: uppercase;
+      font-weight: 600;
+
+      span {
+        img {
+          width: 15%;
+        }
+      }
+      @media all and(min-width:1200px) {
+        font-size: 52px;
+      }
+    }
+
+    .scrol {
+      position: absolute;
+      left: 50%;
+      top: 110%;
+      transform: translate(-50%,-50%);
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      border: solid 1px;
+      cursor: pointer;
+      animation-name: scrl;
+      animation-duration: 1.2s;
+      animation-iteration-count: infinite;
+      color: #FED136;
+      transition: all 0.2s;
+
+      .fas {
+        font-size: 25px;
+        margin-top: 16px;
+        transform: rotateX(180deg);
+      }
+
+      &:hover {
+        background: rgba(0,0,0,.5);
+      }
+    }
+    @keyframes scrl {
+      0% {
+        top: 110%;
+      }
+
+      50% {
+        top: 104%;
+      }
+
+      100% {
+        top: 110%;
+      }
+    }
+    @media all and(min-width:768px) {
+      @keyframes scrl {
+        0% {
+          top: 190%;
+        }
+
+        50% {
+          top: 184%;
+        }
+
+        100% {
+          top: 190%;
+        }
+      }
+    }
+  }
+}
+@keyframes myan1 {
+  0% {
+    background-image: url("../img/cover.jpg");
+  }
+
+  50% {
+    background-image: url("../img/cover.jpg");
+    background-position: center;
+  }
+
+  100% {
+    background-image: url("../img/cover.jpg");
+  }
+}
+//ONAMA HEADER
+
+#main-onama {
+  background-image: url("../img/onama.jpg");
+  animation-name: myan2;
+  animation-duration: 10s;
+}
+@keyframes myan2 {
+  0% {
+    background-image: url("../img/onama.jpg");
+  }
+
+  50% {
+    background-image: url("../img/onama.jpg");
+    background-position: center;
+  }
+
+  100% {
+    background-image: url("../img/onama.jpg");
+  }
+}
+//GAERIJA HEADER
+#main-galerija {
+  background-image: url("../img/galerija.jpg");
+  animation-name: myan3;
+  animation-duration: 10s;
+}
+@keyframes myan3 {
+  0% {
+    background-image: url("../img/galerija.jpg");
+  }
+
+  50% {
+    background-image: url("../img/galerija.jpg");
+    background-position: center;
+  }
+
+  100% {
+    background-image: url("../img/galerija.jpg");
+  }
+}
+//KONTAKT HEADER
+#main-kontakt {
+  background-image: url("../img/kontakt.jpg");
+  animation-name: myan4;
+  animation-duration: 10s;
+}
+@keyframes myan4 {
+  0% {
+    background-image: url("../img/kontakt.jpg");
+  }
+
+  50% {
+    background-image: url("../img/kontakt.jpg");
+    background-position: center;
+  }
+
+  100% {
+    background-image: url("../img/kontakt.jpg");
+  }
+}

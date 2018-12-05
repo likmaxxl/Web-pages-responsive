@@ -1,0 +1,64 @@
+#cov1 {
+  background-image: url("https://images.pexels.com/photos/1080721/pexels-photo-1080721.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+
+  .bckg {
+    padding: 100px 0;
+    background: linear-gradient(rgba(246, 244, 14, 0.45),rgba(50, 208, 30, 0.4));
+  }
+  @media all and(min-width:1200px) {
+    .bckg {
+      padding: 100px 0;
+      background: linear-gradient(rgba(246, 244, 14, 0.35),rgba(50, 208, 30, 0.3));
+    }
+  }
+
+  .txt {
+    padding: 30px 20px 25px;
+    font-size: 22px;
+
+    p {
+      color: rgb(0,0,0);
+      font-weight: 600;
+    }
+
+    .btn {
+      @media all and(min-width:768px) {
+        margin: 20px auto;
+      }
+      @media all and(min-width:992px) {
+        margin: 20px auto;
+      }
+      @media all and(min-width:1200px) {
+        margin: 0 auto;
+      }
+      display: block;
+      margin: 14px auto 0;
+
+      a {
+        text-decoration: none;
+        color: black;
+
+        &:hover {
+          color: white;
+          background-color: rgba(254, 209, 54,.9);
+        }
+      }
+    }
+
+    .btn-primary {
+      background-color: rgba(254, 209, 54,.6);
+      border: solid 1px #FED136;
+      font-size: 19px;
+      font-weight: 600;
+      color: black;
+
+      &:hover {
+        color: white;
+        background-color: rgba(254, 209, 54,.9);
+      }
+    }
+  }
+}
